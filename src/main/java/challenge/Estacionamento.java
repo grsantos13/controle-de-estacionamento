@@ -38,11 +38,7 @@ public class Estacionamento {
     }
 
     public boolean carroEstacionado(Carro carro) {
-        if (listaCarrosEstacionados.contains(carro)) {
-            return true;
-        }else{
-            return false;
-        }
+        return listaCarrosEstacionados.contains(carro);
     }
     private boolean isValid(Motorista motorista) {
         if (motorista == null || motorista.getIdade() < IDADE_HABILITACAO || motorista.getPontos() > MAXIMO_PONTOS_HABILITACAO) {
